@@ -12,7 +12,7 @@ public class VariableBag {
     public static final String EVENT_NAME = "name";
     public static final String EVENT_TIME = "time";
 
-    public static String BASE_URL = "https://192.168.1.35/CHPL/mobileApi/";
+    public static String BASE_URL = "https://192.168.1.146/CHPL/mobileApi/";
     public static String IMG_URL = "https://192.168.1.140/CHPL/products/";
 
     public static String API_KEY="";
