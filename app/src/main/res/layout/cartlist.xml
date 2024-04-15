@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/greenbg"
+        android:layout_marginTop="@dimen/_35ssp"
+        android:layout_marginStart="@dimen/_20ssp"
+        android:layout_marginEnd="@dimen/_20ssp"
+        android:elevation="@dimen/_30ssp"
+
+        >
+        <ImageView
+            android:id="@+id/cartImage"
+            android:layout_width="@dimen/_70ssp"
+            android:layout_height="@dimen/_80ssp"
+            android:layout_margin="@dimen/_5ssp"
+            android:background="@drawable/product"/>
+
+        <TextView
+            android:id="@+id/cartItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_85ssp"
+            android:fontFamily="@font/fontstyle"
+            android:paddingBottom="@dimen/_5ssp"
+            android:text="item"
+            android:textColor="@color/background"
+            android:textSize="@dimen/_30ssp" />
+
+        <TextView
+            android:id="@+id/cartPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_85ssp"
+            android:layout_marginTop="@dimen/_43ssp"
+            android:fontFamily="@font/fontstyle"
+            android:text="price"
+            android:textColor="@color/background"
+            android:textSize="@dimen/_15ssp" />
+        <TextView
+            android:id="@+id/cartQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="quantity"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginTop="@dimen/_63ssp"
+            android:layout_marginStart="@dimen/_85ssp"/>
+
+            
+    </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>

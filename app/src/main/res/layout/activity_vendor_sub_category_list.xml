@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.vendor.VendorCategoryList">
+
+
+    <TextView
+        android:id="@+id/your_categories_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/back"
+        android:fontFamily="@font/fontstyle"
+        android:gravity="center"
+        android:paddingStart="@dimen/_35ssp"
+        android:padding="@dimen/_15ssp"
+        android:text="@string/your_subcategories"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_27sdp" />
+
+    <RelativeLayout
+        android:id="@+id/relat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SearchSubCategory"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_marginStart="@dimen/_20ssp"
+        android:layout_marginEnd="@dimen/_20ssp"
+        >
+        <ImageView
+            android:id="@+id/catimg"
+            android:layout_width="@dimen/_30ssp"
+            android:layout_height="@dimen/_30ssp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_8ssp"
+            android:background="@drawable/categoriesmain"/>
+        <Spinner
+            android:id="@+id/Category_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/catimg"
+            android:layout_marginStart="@dimen/_1ssp"
+            android:dropDownWidth="wrap_content"
+            android:dropDownVerticalOffset="20dp"
+            android:padding="@dimen/_8ssp"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/folder"
+        android:layout_marginTop="@dimen/_18ssp"
+        android:layout_marginStart="@dimen/_18ssp"
+        />
+    <EditText
+        android:id="@+id/SearchSubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15ssp"
+        android:layout_marginEnd="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_below="@+id/your_categories_sub"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:hint="@string/search"
+        android:padding="@dimen/_8ssp"
+        android:fontFamily="@font/fontstyle"
+        android:textColorHint="@color/black"
+        android:drawableEnd="@drawable/search"
+        android:drawableTint="@color/black"
+        android:autofillHints=""
+        android:inputType="textFilter"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryrecycle_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relat"
+        android:layout_marginTop="@dimen/_10ssp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_btn_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_10ssp"
+        android:layout_marginEnd="@dimen/_10ssp"
+        android:backgroundTint="@color/white" />
+    <ImageView
+        android:id="@+id/notFound3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_20ssp"
+        android:layout_below="@+id/relat"
+        android:visibility="invisible"
+
+        android:background="@drawable/illustrations" />
+
+</RelativeLayout>

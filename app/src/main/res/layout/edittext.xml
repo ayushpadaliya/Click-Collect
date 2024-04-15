@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/phone1"
+        android:hint="@string/e_mail"
+        android:autofillHints="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/editBack"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_16ssp"
+        android:padding="@dimen/_7ssp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:textColorHint="@color/lightgreen"
+        android:fontFamily="@font/fontstyle"
+        />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.user.FaceRecognitionActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20ssp"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/lightgreen"
+        android:id="@+id/smile"/>
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background"
+        android:textColor="@color/white"
+        android:text="camera"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_25sdp"
+        android:layout_margin="@dimen/_5sdp"/>
+
+</LinearLayout>

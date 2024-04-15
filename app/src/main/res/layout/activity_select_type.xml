@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6FBD6"
+    tools:context=".Activity.LauncherActivity.SelectTypeActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_margin="@dimen/_25ssp"
+        android:layout_weight="1"
+        android:background="@drawable/iconbg"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="@dimen/_28sdp"
+        android:fontFamily="@font/fontstyle"
+        android:padding="@dimen/_10ssp"
+        android:layout_marginLeft="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:text="@string/select_your_role"
+        android:textColor="#fe8f01"
+        />
+    <Button
+        android:id="@+id/vendorBtn"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#008880"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_weight="1"
+        android:text="@string/vendor"
+        android:padding="0dp"
+        android:gravity="center"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/userBtn"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:backgroundTint="#008880"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text="@string/user"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        android:padding="0dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_35ssp"
+        android:layout_gravity="bottom"
+        android:background="@mipmap/online" />
+
+</LinearLayout>

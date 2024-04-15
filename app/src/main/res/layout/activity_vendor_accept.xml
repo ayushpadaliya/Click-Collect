@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.user.UserViewOrderActivity">
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_3ssp"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/_35ssp"
+            android:layout_height="@dimen/_35ssp"
+            android:background="@drawable/arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/fontstyle"
+            android:text="Order Details"
+            android:textColor="@color/background"
+            android:textSize="@dimen/_24ssp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:background="@color/lightgreen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="@dimen/_5ssp"
+        android:layout_marginTop="@dimen/_10ssp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Product"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/background"
+            android:gravity="center"
+            android:fontFamily="@font/fontstyle"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Price"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Quantity"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background=	"#D0D0D0"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/VendorRecycleViewOrder"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/notification_feature"
+            android:title="SET TIMER"
+            android:icon="@drawable/product"/>
+        <item
+            android:id="@+id/Event_feature"
+            android:title="EVENT BOOK"
+            android:icon="@drawable/product"/>
+        <item
+            android:id="@+id/scan_feature"
+            android:title="QR CODE"
+            android:icon="@drawable/product"/>
+    <item
+        android:id="@+id/face_recognition"
+        android:title="Face Detection"
+        android:icon="@drawable/product"/>
+
+    </group>
+
+</menu>

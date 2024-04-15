@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Regular -->
+    <font
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        app:font="@font/josefinsensbold" />
+
+    <!-- Bold -->
+    <font
+        app:fontStyle="normal"
+        app:fontWeight="900"
+        app:font="@font/josefinsensbold" />
+
+</font-family>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="@dimen/_5ssp"
+    android:padding="@dimen/_50sdp">
+
+
+    <EditText
+        android:id="@+id/numberEdit"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:hint="Enter Mobile"
+        android:inputType="phone"
+        android:fontFamily="@font/fontstyle"
+        android:textColorHint="#7E8E6B"
+        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightgreen"
+            android:text="@string/okay"
+            android:fontFamily="@font/fontstyle"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_14ssp"
+            android:layout_weight="1"
+            android:id="@+id/mobileBtn"/>
+    </LinearLayout>
+</LinearLayout>

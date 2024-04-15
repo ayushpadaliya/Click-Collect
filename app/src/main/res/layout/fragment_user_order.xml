@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editBack1"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            android:background="@color/editBack1"
+            >
+            <ImageView
+                android:id="@+id/orderImg1"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_40ssp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="@dimen/_3ssp"
+                android:background="@drawable/iconbg"
+                android:contentDescription="@string/search" />
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/img1"
+                android:textSize="@dimen/_22ssp"
+                android:fontFamily="@font/fontstyle"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:padding="@dimen/_3ssp"
+                android:text="@string/orders" />
+            <ImageView
+                android:id="@+id/user_log1"
+                android:layout_width="@dimen/_34ssp"
+                android:layout_height="@dimen/_36ssp"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/marketing"
+                android:contentDescription="@string/vendor" />
+            <ImageView
+                android:id="@+id/searchFragment"
+                android:layout_width="@dimen/_35ssp"
+                android:layout_height="@dimen/_35ssp"
+                android:padding="@dimen/_10ssp"
+                android:layout_marginEnd="@dimen/_4ssp"
+                android:layout_gravity="end"
+                android:background="@drawable/search"
+                android:backgroundTint="@color/lightgreen"
+                android:layout_toStartOf="@+id/user_log1"
+                app:showAsAction="ifRoom|withText"
+                app:actionViewClass="android.widget.SearchView"
+                android:contentDescription="@string/user" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+                <RelativeLayout
+                    android:animateLayoutChanges="true"
+                    android:animationCache="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+
+                        android:visibility="gone"
+                        android:id="@+id/searchOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_13sdp"
+                        android:focusable="true"
+                        android:gravity="center|start"
+                        android:paddingStart="@dimen/_5ssp"
+                        android:padding="@dimen/_3ssp"
+                        android:background="@drawable/newborder"
+                        android:hint="@string/search"
+                        android:layout_marginTop="@dimen/_8ssp"
+                        android:fontFamily="@font/fontstyle"
+                        android:layout_marginStart="@dimen/_15ssp"
+                        android:layout_marginEnd="@dimen/_15ssp"
+                        android:textColorHint="@color/lightgreen"
+                        android:drawableTint="@color/lightgreen"
+                        android:inputType="textFilter"/>
+
+                    <ImageButton
+                        android:visibility="gone"
+                        android:id="@+id/cancel_button_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@id/searchOrder"
+                        android:layout_alignBottom="@id/searchOrder"
+                        android:background="@null"
+                        android:src="@drawable/cancel_icon"/>
+
+                </RelativeLayout>
+
+
+
+
+
+<!--<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orderRecycle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:nestedScrollingEnabled="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_180sdp"
+        android:indeterminateTint="#EDB265"
+        android:background="@drawable/iconbg"
+        />
+<!--</ScrollView>-->
+
+</LinearLayout>

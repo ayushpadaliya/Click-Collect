@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ecommerce" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Ecommerce" parent="Base.Theme.Ecommerce" />
+    <style name="AppTheme_simple_login_splace" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here Action Bar -->
+        <item name="android:statusBarColor">@color/editBack2</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="vendor_category_list" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here Action Bar -->
+        <item name="android:statusBarColor">@color/lightgreen</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="vendor_subcategory_list" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here Action Bar -->
+        <item name="android:statusBarColor">#ECAF3F</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="vendor_product" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here Action Bar -->
+        <item name="android:statusBarColor">#C3352A</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="select_page" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:statusBarColor">#F6FBD6</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="select_page1" parent="Theme.MaterialComponents.Light">
+        <item name="android:statusBarColor">#F6FBD6</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="dialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/lightgreen</item>
+    </style>
+    <style name="dialogTheme1" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/lightgreen</item>
+
+
+
+    </style>
+    <style name="login" parent="Theme.AppCompat">
+
+    </style>
+
+</resources>

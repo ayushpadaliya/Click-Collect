@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/product_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_products"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/fontstyle"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/spinner_product_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8ssp"
+        android:spinnerMode="dropdown"
+        android:layout_margin="@dimen/_8ssp"
+        android:background="@drawable/draw2"/>
+    <Spinner
+        android:id="@+id/spinner_product_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8ssp"
+        android:spinnerMode="dropdown"
+        android:layout_margin="@dimen/_8ssp"
+        android:background="@drawable/draw2"/>
+    <EditText
+        android:id="@+id/product_txt_input"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:hint="@string/enter_product_name"
+        android:fontFamily="@font/fontstyle"
+        android:textColorHint="#7E8E6B"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/product_prize_input"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:hint="@string/enter_product_prize"
+        android:fontFamily="@font/fontstyle"
+        android:textColorHint="#7E8E6B"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/imageput"/>
+
+        <Button
+            android:id="@+id/takeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/greenbg"
+            android:layout_gravity="center"
+            android:text="camera"
+            android:textColor="@color/background"
+            android:textSize="@dimen/_20ssp"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightgreen"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/fontstyle"
+            android:layout_weight="1"
+            android:id="@+id/product_btn_cancel"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightgreen"
+            android:text="@string/okay"
+            android:fontFamily="@font/fontstyle"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_14ssp"
+            android:layout_weight="1"
+            android:id="@+id/product_sub_btn_okay"/>
+    </LinearLayout>
+</LinearLayout>

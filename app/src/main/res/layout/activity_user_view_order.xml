@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/editBack1"
+    tools:context=".Activity.user.UserViewOrderActivity">
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_3ssp"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/_35ssp"
+            android:layout_height="@dimen/_35ssp"
+            android:background="@drawable/arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/fontstyle"
+            android:text="Order Details"
+            android:textColor="@color/background"
+            android:textSize="@dimen/_24ssp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:background="@color/lightgreen"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:background=	"#D0D0D0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/editBack1"
+        android:padding="@dimen/_5ssp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/orderVname"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp"
+            android:layout_weight="1.9"
+            android:text="VENDOR"
+            android:gravity="center"
+            android:padding="@dimen/_5ssp"
+            android:layout_gravity="start"
+            android:fontFamily="@font/fontstyle"/>
+        <TextView
+            android:id="@+id/orderPname"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_width="0dp"
+            android:padding="@dimen/_5ssp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp"
+            android:layout_weight="1.5"
+            android:text="PRODUCT"
+            android:gravity="start|center"
+            android:layout_gravity="start"
+            android:fontFamily="@font/fontstyle"/>
+        <TextView
+            android:id="@+id/orderprice"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp"
+            android:padding="@dimen/_5ssp"
+            android:text="PRICE"
+            android:gravity="center"
+            android:layout_gravity="start"
+            android:fontFamily="@font/fontstyle"/>
+        <TextView
+            android:id="@+id/orderQuant"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp"
+            android:padding="@dimen/_5ssp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="QUANTITY"
+            android:layout_gravity="start"
+            android:fontFamily="@font/fontstyle"/>
+        <TextView
+            android:id="@+id/orderConfirm"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8ssp"
+            android:text="STATUS"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/_5ssp"
+            android:layout_gravity="start"
+            android:fontFamily="@font/fontstyle"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background=	"#D0D0D0"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orderRecycleView"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/note"
+        android:textSize="@dimen/_12ssp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="@dimen/_20ssp"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/red"
+        android:padding="@dimen/_10ssp"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    >
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5ssp"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:id="@+id/card_visit"
+        android:layout_marginRight="@dimen/_14ssp"
+        android:layout_marginLeft="@dimen/_14ssp"
+        android:background="@drawable/cardbg"
+        app:cardElevation="@dimen/_5ssp"
+        android:layout_marginBottom="@dimen/_2ssp"
+        app:strokeWidth="@dimen/_1ssp"
+        app:strokeColor="@color/background"
+        >
+    <LinearLayout
+        android:id="@+id/layout_orderCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/editBack1"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17ssp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:fontFamily="@font/fontstyle"
+            android:text="Order No :"
+            android:textColor="@color/background"
+            android:textSize="@dimen/_30ssp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5ssp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:text="Cart Date"
+                android:textColor="@color/background"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/order_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:gravity="end"
+                android:text="Sub Total :"
+                android:textColor="@color/lightgreen"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5ssp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:text="No of Product"
+                android:textColor="@color/background"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/order_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:gravity="end"
+                android:text="0 %"
+                android:textColor="@color/lightgreen"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5ssp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:text="Total price "
+                android:textColor="@color/background"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:gravity="end"
+                android:text="0 %"
+                android:textColor="@color/lightgreen"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5ssp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/view_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/editBack1"
+                android:fontFamily="@font/fontstyle"
+                android:text="View More..."
+                android:textColor="@color/background"
+                android:textSize="@dimen/_16ssp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

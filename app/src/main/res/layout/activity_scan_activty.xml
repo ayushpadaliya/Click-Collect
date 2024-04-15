@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.user.ScanQrActivity">
+<TextView
+    android:id="@+id/view_scan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Your url"
+    android:textSize="@dimen/_15ssp"
+    android:gravity="center"
+    android:layout_margin="@dimen/_12sdp"
+    android:padding="@dimen/_15ssp"
+    android:fontFamily="@font/fontstyle"
+    android:textColor="@color/background"
+    android:background="@color/editBack1"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/scan_button"
+        android:layout_below="@+id/view_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:layout_margin="@dimen/_12sdp"
+        android:text="SCAN"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:fontFamily="@font/fontstyle"
+/>
+</RelativeLayout>

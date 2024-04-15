@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.vendor.VendorCategoryList">
+
+
+    <TextView
+        android:id="@+id/your_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greenbg"
+        android:fontFamily="@font/fontstyle"
+        android:gravity="center"
+        android:paddingStart="@dimen/_35ssp"
+        android:padding="@dimen/_15ssp"
+        android:text="@string/your_categories"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_33sdp" />
+    <EditText
+        android:id="@+id/SearchCategory"
+        android:layout_below="@+id/your_categories"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_17ssp"
+        android:layout_marginEnd="@dimen/_17ssp"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:hint="@string/search"
+        android:padding="@dimen/_8ssp"
+        android:fontFamily="@font/fontstyle"
+        android:textColorHint="@color/black"
+        android:drawableEnd="@drawable/search"
+        android:drawableTint="@color/black"
+        android:autofillHints=""
+        android:inputType="textFilter"/>
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/categoriesmain"
+        android:layout_marginTop="@dimen/_25ssp"
+        android:layout_marginStart="@dimen/_35ssp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryrecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SearchCategory"
+        android:layout_marginTop="@dimen/_12ssp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/_10ssp"
+        android:layout_marginEnd="@dimen/_10ssp"
+        android:backgroundTint="@color/white" />
+    <ImageView
+        android:id="@+id/notFound1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_20ssp"
+        android:layout_below="@+id/SearchCategory"
+        android:visibility="invisible"
+        android:background="@drawable/illustrations" />
+
+</RelativeLayout>

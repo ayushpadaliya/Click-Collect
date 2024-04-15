@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.vendor.OrderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_7ssp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_3ssp"
+            android:background="@drawable/iconbg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24ssp"
+            android:fontFamily="@font/fontstyle"
+            android:paddingStart="@dimen/_7ssp"
+            android:textColor="@color/background"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Orders" />
+        <ImageView
+            android:id="@+id/user_log"
+            android:layout_width="@dimen/_34ssp"
+            android:layout_height="@dimen/_34ssp"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/_150sdp"
+            android:background="@drawable/marketing"/>
+    </LinearLayout>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10ssp"
+    android:layout_marginStart="@dimen/_40ssp"
+    android:layout_marginEnd="@dimen/_40ssp"
+    app:cardCornerRadius="@dimen/_10ssp"
+    >
+
+    <TextView
+        android:id="@+id/total_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_18ssp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/_5ssp"
+        android:text="Accepted:"
+        android:background="@color/editBack1"
+        />
+
+</androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:layout_height="wrap_content"
+        android:id="@+id/vendorOrders"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_10ssp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="@dimen/_10ssp"
+        android:text=" Orders that have been accepted will display with a green background color otherwise it will shown in red"
+        />
+
+
+
+</LinearLayout>

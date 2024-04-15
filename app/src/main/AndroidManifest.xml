@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="SelectedPhotoAccess" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme_simple_login_splace"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.user.FaceRecognitionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.ScanQrActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".Activity.adapter.BroadCasters.ForegroundService"
+            android:foregroundServiceType="camera" />
+
+        <activity
+            android:name=".Activity.user.ServiceActivity"
+            android:exported="false" />
+
+        <receiver android:name=".Activity.adapter.BroadCasters.AlarmBroadCast" />
+
+        <activity
+            android:name=".Activity.user.ReminderTaskActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme_simple_login_splace" />
+        <activity
+            android:name=".Activity.vendor.VendorAcceptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.UserViewOrderActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme_simple_login_splace" />
+        <activity
+            android:name=".Activity.vendor.OrderActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme_simple_login_splace" />
+        <activity
+            android:name=".Activity.user.UserCardViewActivity"
+            android:exported="false"
+            android:theme="@style/select_page1" />
+        <activity
+            android:name=".Activity.user.UserProductChoiceActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme_simple_login_splace" />
+        <activity
+            android:name=".Activity.vendor.ProductListActivity"
+            android:exported="false"
+            android:theme="@style/vendor_product"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".Activity.vendor.VendorSubCategoryListActivity"
+            android:exported="false"
+            android:theme="@style/vendor_subcategory_list"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".Activity.vendor.VendorCategoryList"
+            android:exported="false"
+            android:theme="@style/vendor_category_list"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".Activity.vendor.VendorMainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme_simple_login_splace" />
+        <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".Activity.user.UserMainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme_simple_login_splace">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LauncherActivity.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme_simple_login_splace" />
+        <activity
+            android:name=".Activity.LauncherActivity.LoginActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme_simple_login_splace" />
+        <activity
+            android:name=".Activity.LauncherActivity.SelectTypeActivity"
+            android:exported="false"
+            android:theme="@style/select_page" />
+        <activity
+            android:name=".Activity.LauncherActivity.SplaceScreenActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme_simple_login_splace" />
+        <!--
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

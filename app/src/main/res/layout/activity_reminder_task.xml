@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.user.ReminderTaskActivity">
+    <EditText
+        android:id="@+id/editEvent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:hint="@string/enter_event"
+        android:fontFamily="@font/fontstyle"
+        android:textColorHint="@color/background"
+        android:background="@color/editBack1"
+        android:gravity="start"
+        android:layout_margin="@dimen/_20ssp"
+        android:paddingStart="@dimen/_7sdp"
+       />
+    <TextView
+        android:drawableStart="@drawable/calenderdraw"
+        android:id="@+id/setButtonDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEvent"
+        android:background="@color/editBack1"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:gravity="start|center"
+        android:text="set Date"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/fontstyle"/>
+
+<!--    <DatePicker
+        android:id="@+id/datePick"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:calendarViewShown="true"
+        android:spinnersShown="false"/>-->
+    <TextView
+        android:drawableStart="@drawable/timedraw"
+        android:id="@+id/setButtonTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/editBack1"
+        android:layout_marginTop="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:gravity="start|center"
+        android:text="set Time"
+        android:layout_below="@+id/setButtonDate"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/fontstyle"/>
+<!--    <TimePicker
+        android:id="@+id/timePick"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:calendarViewShown="true"
+        android:spinnersShown="false"/>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/editBack1"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:text="@string/set_reminder"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_2ssp"
+        android:textColor="@color/background"
+        android:backgroundTint="@color/greenbg"
+        android:textSize="@dimen/_15sdp"
+        android:shadowRadius="@integer/material_motion_duration_long_2"
+        android:fontFamily="@font/fontstyle"/>
+
+
+
+
+</RelativeLayout>

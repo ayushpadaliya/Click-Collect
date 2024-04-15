@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/editBack1"
+    tools:context=".Activity.user.UserProductChoiceActivity"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barProduct"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            android:background="@color/editBack1"
+            >
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/proImg1"
+                android:layout_width="@dimen/_40ssp"
+                android:layout_height="@dimen/_40ssp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="@dimen/_3ssp"
+                android:background="@drawable/iconbg"
+                android:contentDescription="@string/search" />
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/proImg1"
+                android:textSize="@dimen/_22ssp"
+                android:fontFamily="@font/fontstyle"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:padding="@dimen/_3ssp"
+                android:text="@string/products" />
+            <ImageView
+                android:id="@+id/marketing"
+                android:layout_width="@dimen/_34ssp"
+                android:layout_height="@dimen/_36ssp"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/marketing"
+                android:contentDescription="@string/vendor" />
+
+            <ImageView
+                android:id="@+id/cartButton"
+                android:layout_width="@dimen/_34ssp"
+                android:layout_height="@dimen/_36ssp"
+                android:layout_marginEnd="@dimen/_4ssp"
+                android:layout_gravity="end"
+                android:background="@drawable/pannier"
+                android:layout_toStartOf="@+id/marketing"
+                android:contentDescription="@string/user" />
+            <ImageView
+                android:id="@+id/searchProducts"
+                android:layout_width="@dimen/_35ssp"
+                android:layout_height="@dimen/_35ssp"
+                android:layout_marginEnd="@dimen/_4ssp"
+                android:layout_gravity="end"
+                android:padding="@dimen/_10ssp"
+                android:backgroundTint="@color/lightgreen"
+                android:background="@drawable/search"
+                android:layout_toStartOf="@+id/cartButton"
+                android:contentDescription="@string/user" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/textOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/cartButton"
+                android:layout_alignEnd="@id/cartButton"
+                android:text="0"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                android:background="@drawable/pannier1"/>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:animationCache="true"
+        android:layout_height="wrap_content">
+        <EditText
+            android:visibility="gone"
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:focusable="true"
+            android:gravity="center|start"
+            android:paddingStart="@dimen/_5ssp"
+            android:padding="@dimen/_1ssp"
+            android:background="@drawable/newborder"
+            android:hint="@string/search"
+            android:fontFamily="@font/fontstyle"
+            android:layout_margin="@dimen/_15ssp"
+            android:textColorHint="@color/lightgreen"
+            android:drawableTint="@color/lightgreen"
+            android:inputType="textFilter"/>
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/search"
+            android:layout_alignBottom="@id/search"
+            android:background="@null"
+            android:src="@drawable/cancel_icon"/>
+
+    </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/_5ssp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_7ssp"
+                        android:background="@drawable/categoriesmain"
+                        android:padding="@dimen/_3ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="@dimen/_3ssp"
+                        android:fontFamily="@font/fontstyle"
+                        android:text="category :"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/_24ssp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/userMainRecycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20ssp"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3ssp" />
+
+                <LinearLayout
+                    android:id="@+id/subLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_3ssp"
+                        android:background="@drawable/folder"
+                        android:padding="@dimen/_3ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="@dimen/_3ssp"
+                        android:fontFamily="@font/fontstyle"
+                        android:text="SubCategory :"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/_24ssp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/userMainRecycleSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="@dimen/_20ssp"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_3ssp" />
+                <LinearLayout
+                    android:id="@+id/ProductLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_3ssp"
+                        android:background="@drawable/product"
+                        android:padding="@dimen/_3ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_margin="@dimen/_3ssp"
+                        android:fontFamily="@font/fontstyle"
+                        android:text="Products :"
+                        android:textColor="@color/background"
+                        android:textSize="@dimen/_24ssp" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/userMainRecycleProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5ssp"
+                    android:nestedScrollingEnabled="true"
+                    android:padding="@dimen/_3ssp" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/found"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_50sdp"
+                    android:background="@drawable/found" />
+                <ProgressBar
+                    android:visibility="visible"
+                    android:id="@+id/progressBarProduct"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_180sdp"
+                    android:indeterminateTint="#EDB265"
+                    android:background="@drawable/iconbg"
+                    />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+</LinearLayout>

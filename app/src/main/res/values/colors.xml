@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#fe8f01</color>
+    <color name="lightgreen">#3D5920</color>
+    <color name="editBack">#F2F4E3</color>
+    <color name="greenbg">#D5EBBB</color>
+    <color name="back">#F5DCAD</color>
+    <color name="back1">#FFD2C0</color>
+    <color name="yellow">#EBE5BB</color>
+    <color name="background">#0B3128</color>
+    <color name="editBack1">#FAFAF3</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="editBack2">#F4F4DA</color>
+    <color name="red">#FD1201</color>
+
+</resources>

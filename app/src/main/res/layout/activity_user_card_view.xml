@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:orientation="vertical"
+    tools:context=".Activity.user.UserCardViewActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_7ssp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/_40ssp"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_gravity="center"
+            android:background="@drawable/arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_100sdp"
+            android:fontFamily="@font/fontstyle"
+            android:text="Cart"
+            android:textColor="@color/background"
+            android:textSize="@dimen/_23ssp" />
+    </LinearLayout>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="visible"
+        android:id="@+id/reycle_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</ScrollView>
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/progressBarCart"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:indeterminateBehavior="repeat"
+        android:layout_marginTop="@dimen/_200sdp"
+        android:indeterminateTint="#EDB265"
+        android:background="@drawable/iconbg"
+        />
+<ImageView
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_250sdp"
+    android:id="@+id/cart_data"
+    android:visibility="gone"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/_75sdp"
+    android:background="@drawable/datafound"/>
+    <LinearLayout
+        android:id="@+id/cart_bill"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/order_summery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17ssp"
+            android:layout_marginTop="@dimen/_20ssp"
+            android:fontFamily="@font/fontstyle"
+            android:text="Order Summary :"
+            android:textColor="@color/background"
+            android:textSize="@dimen/_24ssp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5ssp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:text="Products"
+                android:textColor="@color/lightgreen"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/subTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:gravity="end"
+                android:text="Sub Total :"
+                android:textColor="@color/lightgreen"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_15ssp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5ssp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:text="TOTAL"
+                android:textColor="@color/lightgreen"
+                android:textSize="@dimen/_16ssp" />
+
+            <TextView
+                android:id="@+id/Total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:fontFamily="@font/fontstyle"
+                android:gravity="end"
+                android:text="Sub Total :"
+                android:textColor="@color/lightgreen"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/checkoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16ssp"
+            android:layout_marginTop="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_16ssp"
+            android:background="@drawable/checkoutbutton" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:background="@color/editBack1"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+

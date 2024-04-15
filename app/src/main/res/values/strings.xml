@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="exotic">WholeSale\nof exotic products.</string>
+    <string name="select_your_role">Select Your Role !</string>
+    <string name="vendor">VENDOR</string>
+    <string name="user">USER</string>
+    <string name="getting_started">Getting Started ...</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget Password ?</string>
+
+    <string name="ask">New ?</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_e_mail">Enter E-mail</string>
+    <string name="enter_phone_no">Enter Phone no</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="vendor_login">Vendor Login</string>
+    <string name="vendor_registration">Vendor Registration</string>
+    <string name="user_registration">User Registration !</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="home">Home</string>
+    <string name="vendors">Vendors</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="order">Order</string>
+    <string name="homeee">Home</string>
+    <string name="search">Search....</string>
+    <string name="category">Category</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="products">Products</string>
+    <string name="please_add_categories">PLEASE ADD CATEGORIES !</string>
+    <string name="your_categories">categories !</string>
+    <string name="enter_your_message">Enter your Message</string>
+    <string name="cancel">Cancel</string>
+    <string name="okay">Okay</string>
+    <string name="enter_your_category">Enter Your Category !</string>
+    <string name="enter_edit_categoryname">Enter Edit CategoryName</string>
+    <string name="your_subcategories">SubCategories !</string>
+    <string name="add_category">ADD CATEGORY</string>
+    <string name="add_subcategory">ADD SUBCATEGORY</string>
+    <string name="enter_subcategory">Enter SubCategory !</string>
+    <string name="edit_category">"EDIT CATEGORY "</string>
+    <string name="your_products">Products !</string>
+    <string name="add_products">ADD PRODUCTS</string>
+    <string name="t1">select subcategory</string>
+    <string name="enter_product_prize">Enter Product Prize</string>
+    <string name="enter_product_name">Enter Product Name</string>
+    <string name="product_name">Name:</string>
+    <string name="product_price">Price:</string>
+    <string name="note">Please note that all transactions will be conducted in cash upon receiving your delivery.</string>
+    <string name="pending">PENDING</string>
+    <string name="accepted">ACCEPTED</string>
+    <string name="rejected">REJECTED</string>
+    <string name="enter_event">Enter Event:</string>
+    <string name="set_reminder">set Reminder</string>
+    <string name="timer">Timer</string>
+    <string name="search_hint">search\n\n</string>
+    <string name="orders">Orders</string>
+    <string name="open_navigation_drawer">open_navigation_drawer</string>
+    <string name="close_navigation_drawer">close_navigation_drawer</string>
+
+
+</resources>

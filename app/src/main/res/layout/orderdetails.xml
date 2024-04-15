@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbg"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10ssp"
+        android:paddingTop="@dimen/_5ssp"
+        android:paddingBottom="@dimen/_5ssp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:weightSum="5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:padding="@dimen/_4ssp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:text="Vendor Name"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:textColor="@color/background"
+                android:fontFamily="@font/fontstyle"/>
+            <TextView
+                android:id="@+id/orderVname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:text="Vendor Name"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="end"
+                android:textColor="@color/background"
+                android:fontFamily="@font/fontstyle"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:padding="@dimen/_4ssp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:text="Product Name"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:textColor="@color/background"
+                android:fontFamily="@font/fontstyle"/>
+            <TextView
+                android:id="@+id/orderPname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15ssp"
+                android:text="Vendor Name"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+
+                android:gravity="end"
+                android:textColor="@color/background"
+                android:fontFamily="@font/fontstyle"/>
+        </LinearLayout>                <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/_4ssp"
+
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:text="Product Quantity"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"/>
+        <TextView
+            android:id="@+id/orderQuant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:text="Vendor Name"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            android:gravity="end"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"/>
+    </LinearLayout>                <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:padding="@dimen/_4ssp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:text="Product Prize"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"/>
+        <TextView
+            android:id="@+id/orderprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:text="Vendor Name"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            android:gravity="end"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"/>
+    </LinearLayout>                <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="@dimen/_4ssp"
+
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:text="Confirmation"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"/>
+        <TextView
+            android:id="@+id/orderConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_15ssp"
+            android:text="Vendor Name"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textColor="@color/background"
+            android:fontFamily="@font/fontstyle"/>
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

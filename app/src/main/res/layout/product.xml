@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_8ssp"
+        android:backgroundTint="@color/back1"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@color/back">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name"
+            android:fontFamily="@font/fontstyle"
+            android:paddingStart="@dimen/_5ssp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#BF000000"/>
+        <TextView
+            android:id="@+id/ProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15ssp"
+            android:layout_marginEnd="@dimen/_100sdp"
+            android:text="@string/products"
+            android:paddingStart="@dimen/_32ssp"
+            android:fontFamily="@font/fontstyle"
+            android:paddingBottom="@dimen/_5ssp"
+            android:textSize="@dimen/_22sdp"
+            android:textColor="@color/black"
+            android:gravity="start"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginEnd="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/product_price"
+            android:paddingStart="@dimen/_5ssp"
+            android:fontFamily="@font/fontstyle"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_50ssp"
+            android:textColor="#BF000000"/>
+        <TextView
+            android:id="@+id/ProductPrize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_60ssp"
+            android:layout_marginEnd="@dimen/_100sdp"
+            android:text="@string/products"
+            android:paddingStart="@dimen/_32ssp"
+            android:paddingBottom="@dimen/_5ssp"
+            android:fontFamily="@font/fontstyle"
+            android:textSize="@dimen/_22sdp"
+            android:textColor="@color/black"
+            android:gravity="start"/>
+
+
+
+        <ImageButton
+            android:id="@+id/product_delete"
+            android:layout_width="28dp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_120sdp"
+            android:background="@drawable/delete"
+            android:gravity="center" />
+        <ImageButton
+            android:id="@+id/product_edit"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:layout_marginStart="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/editbutton"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
