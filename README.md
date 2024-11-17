@@ -1,2 +1,3 @@
 # Click-Collect
-this is the basic Ecommerce website
+Built a user/vendor platform for inventory management and shopping, focusing on ef icient 
+work lows. 
